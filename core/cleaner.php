@@ -50,13 +50,14 @@ class Cleaner {
 	 */
 	public function __construct() {
 
-		// Remove actions
+		// Remove WP actions
 		foreach ($this->actionsToRemove as $action) {
 			remove_action($action[0], $action[1], isset($action[2])? $action[2] : 10);
 		}
 
 		// WC hooks
 		add_action('get_header', [&$this, 'removeWCGenerator']);
+		add_action('woocommerce_init', [&$this, 'removeWCGenerator']);
 	}
 
 
