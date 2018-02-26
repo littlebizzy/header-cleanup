@@ -156,6 +156,9 @@ Please avoid leaving negative reviews in order to get a feature implemented. Ins
 
 == Changelog ==
 
+= 1.0.1 =
+* bug fix: `PHP Notice: Undefined index: woocommerce in ../header-cleanup-littlebizzy/core/cleaner.php`
+
 = 1.0.0 =
 * initial release
 * plugin uses PHP namespaces
