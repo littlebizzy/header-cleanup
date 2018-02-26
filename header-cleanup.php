@@ -21,7 +21,7 @@ if (!function_exists('add_action'))
 // Plugin constants
 const FILE = __FILE__;
 const PREFIX = 'hdrcln';
-const VERSION = '1.0.0';
+const VERSION = '1.0.1';
 
 // Loader
 require_once dirname(FILE).'/helpers/loader.php';
