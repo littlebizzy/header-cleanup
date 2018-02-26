@@ -158,6 +158,7 @@ Please avoid leaving negative reviews in order to get a feature implemented. Ins
 
 = 1.0.1 =
 * bug fix: `PHP Notice: Undefined index: woocommerce in ../header-cleanup-littlebizzy/core/cleaner.php`
+* (better support for non-WooCommerce sites and older WooCommerce versions)
 
 = 1.0.0 =
 * initial release
