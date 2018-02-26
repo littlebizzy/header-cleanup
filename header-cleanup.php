@@ -3,7 +3,7 @@
 Plugin Name: Header Cleanup
 Plugin URI: https://www.littlebizzy.com/plugins/header-cleanup
 Description: Cleans up most of the unnecessary junk meta included by default in the WordPress header including generator, RSD, shortlink, previous and next, etc.
-Version: 1.0.0
+Version: 1.0.1
 Author: LittleBizzy
 Author URI: https://www.littlebizzy.com
 License: GPLv3

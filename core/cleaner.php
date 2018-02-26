@@ -66,8 +66,13 @@ class Cleaner {
 	 * Remove generator from WooCommerce old versions
 	 */
 	public function removeWCGenerator() {
+
+		// Generator WC function
 		remove_action('wp_head', 'wc_generator_tag'); // WC >= 2.1.0
-		remove_action('wp_head', [$GLOBALS['woocommerce'], 'generator']); // WC < 2.1.0
+
+		// Generator method depending on the global WC object
+		if (isset($GLOBALS['woocommerce']) && is_object($GLOBALS['woocommerce']))
+			remove_action('wp_head', [$GLOBALS['woocommerce'], 'generator']); // WC < 2.1.0
 	}
 
 
