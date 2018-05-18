@@ -7,7 +7,7 @@ Requires at least: 4.4
 Tested up to: 4.9
 Requires PHP: 7.0
 Multisite support: No
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Prefix: HDRCLN
@@ -28,6 +28,46 @@ Cleans up most of the unnecessary junk meta included by default in the WordPress
 #### The Long Version ####
 
 WordPress Core includes several meta items in the header that many sites don't require. For cleaner and simpler code, this plugin is recommended to help simplify your header for SEO and general code cleanliness.
+
+The problem with many "cleanup" plugins with WordPress is that they don't focus on one purpose, but rather mix and match various goals in a confusing manner; for example they might remove some "junk code" from the header, but also totally disable the functionality of a built-in Core function too such as the REST API or RSS feeds. Since our goal is to be hyper organized and clear about each of our plugin's goals, keep in mind that this plugin's sole purpose is to cleanup source code in the header and is not meant to actually disable any functionality. Instead, if you wish to disable certain functions, you can install this plugin alonside our other plugins such as Disable Emojis, Disable XML-RPC, Disable Embeds, Disable REST API, Disable Feeds, etc.
+
+RSD Links:
+
+    `rsd_link`
+
+WordPress / WooCommerce generator (version) tags:
+
+    `wp_generator` 
+    `wc_generator_tag`
+
+Windows Live manifest link:
+
+    `wlwmanifest_link`
+
+Shortlinks:
+
+    `wp_shortlink_wp_head`
+
+Relational links:
+
+    `start_post_rel_link`
+    `parent_post_rel_link`
+    `index_rel_link`
+    `adjacent_posts_rel_link`
+    `adjacent_posts_rel_link_wp_head`
+
+Feed (RSS) links. The feed links generated automatically by WordPress will be removed (hidden) from the header, although the actual URIs for the feeds will continue to function as normal.
+
+    `feed_links`
+    `feed_links_extra`
+
+REST API (WP JSON) links:
+
+    `rest_output_link_wp_head`
+
+DNS prefetch links (default prefetch only).
+
+    `wp_resource_hints`
 
 #### Compatibility ####
 
@@ -155,6 +195,10 @@ There is no settings page for top speed and simplicity.
 Please avoid leaving negative reviews in order to get a feature implemented. Instead, we kindly ask that you post your feedback on the wordpress.org support forums by tagging this plugin in your post. If needed, you may also contact our homepage.
 
 == Changelog ==
+
+= 1.0.2 =
+* disabled `rest_output_link_wp_head`
+* disabled `wp_resource_hints`
 
 = 1.0.1 =
 * bug fix: `PHP Notice: Undefined index: woocommerce in ../header-cleanup-littlebizzy/core/cleaner.php`
