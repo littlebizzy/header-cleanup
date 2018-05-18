@@ -31,43 +31,20 @@ WordPress Core includes several meta items in the header that many sites don't r
 
 The problem with many "cleanup" plugins with WordPress is that they don't focus on one purpose, but rather mix and match various goals in a confusing manner; for example they might remove some "junk code" from the header, but also totally disable the functionality of a built-in Core function too such as the REST API or RSS feeds. Since our goal is to be hyper organized and clear about each of our plugin's goals, keep in mind that this plugin's sole purpose is to cleanup source code in the header and is not meant to actually disable any functionality. Instead, if you wish to disable certain functions, you can install this plugin alonside our other plugins such as Disable Emojis, Disable XML-RPC, Disable Embeds, Disable REST API, Disable Feeds, etc.
 
-RSD Links:
-
-    `rsd_link`
-
-WordPress / WooCommerce generator (version) tags:
-
-    `wp_generator` 
-    `wc_generator_tag`
-
-Windows Live manifest link:
-
-    `wlwmanifest_link`
-
-Shortlinks:
-
-    `wp_shortlink_wp_head`
-
-Relational links:
-
-    `start_post_rel_link`
-    `parent_post_rel_link`
-    `index_rel_link`
-    `adjacent_posts_rel_link`
-    `adjacent_posts_rel_link_wp_head`
-
-Feed (RSS) links. The feed links generated automatically by WordPress will be removed (hidden) from the header, although the actual URIs for the feeds will continue to function as normal.
-
-    `feed_links`
-    `feed_links_extra`
-
-REST API (WP JSON) links:
-
-    `rest_output_link_wp_head`
-
-DNS prefetch links (default prefetch only).
-
-    `wp_resource_hints`
+* `rsd_link`
+* `wp_generator` 
+* `wc_generator_tag`
+* `wlwmanifest_link`
+* `wp_shortlink_wp_head`
+* `start_post_rel_link`
+* `parent_post_rel_link`
+* `index_rel_link`
+* `adjacent_posts_rel_link`
+* `adjacent_posts_rel_link_wp_head`
+* `feed_links`
+* `feed_links_extra`
+* `rest_output_link_wp_head`
+* `wp_resource_hints`
 
 #### Compatibility ####
 
@@ -197,14 +174,29 @@ Please avoid leaving negative reviews in order to get a feature implemented. Ins
 == Changelog ==
 
 = 1.0.2 =
-* disabled `rest_output_link_wp_head`
-* disabled `wp_resource_hints`
+* disables `rest_output_link_wp_head`
+* disables `wp_resource_hints`
+* added recommended plugins notice
+* added rating request notice
+* added warning for Multisite installations
 
 = 1.0.1 =
-* bug fix: `PHP Notice: Undefined index: woocommerce in ../header-cleanup-littlebizzy/core/cleaner.php`
-* (better support for non-WooCommerce sites and older WooCommerce versions)
+* fix: `PHP Notice: Undefined index: woocommerce in ../header-cleanup-littlebizzy/core/cleaner.php`
+* (better support for non-WooCommerce and older WooCommerce versions)
 
 = 1.0.0 =
 * initial release
 * plugin uses PHP namespaces
 * object oriented code
+* disables `rsd_link`
+* disables `wp_generator` 
+* disables `wc_generator_tag`
+* disables `wlwmanifest_link`
+* disables `wp_shortlink_wp_head`
+* disables `start_post_rel_link`
+* disables `parent_post_rel_link`
+* disables `index_rel_link`
+* disables `adjacent_posts_rel_link`
+* disables `adjacent_posts_rel_link_wp_head`
+* disables `feed_links`
+* disables `feed_links_extra`
