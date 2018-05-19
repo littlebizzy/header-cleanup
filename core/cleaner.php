@@ -41,6 +41,9 @@ class Cleaner {
 		// All feeds/RSS links
 		['wp_head', 'feed_links', 2],
 		['wp_head', 'feed_links_extra', 3],
+
+		// WP-JSON REST API link
+		['wp_head', 'rest_output_link_wp_head'],
 	];
 
 
