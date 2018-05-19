@@ -44,6 +44,9 @@ class Cleaner {
 
 		// WP-JSON REST API link
 		['wp_head', 'rest_output_link_wp_head'],
+
+		// Default DNS prefetch
+		['wp_head', 'wp_resource_hints', 2],
 	];
 
 
