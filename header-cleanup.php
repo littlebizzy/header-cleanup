@@ -14,14 +14,25 @@ Prefix: HDRCLN
 // Plugin namespace
 namespace LittleBizzy\HeaderCleanup;
 
-// Block direct calls
-if (!function_exists('add_action'))
-	die;
-
 // Plugin constants
 const FILE = __FILE__;
 const PREFIX = 'hdrcln';
 const VERSION = '1.0.2';
+
+// Block direct calls
+if (!function_exists('add_action'))
+	die;
+
+// Admin Notices module
+require_once dirname(FILE).'/admin-notices.php';
+Admin_Notices::instance(FILE);
+
+// Admin Notices Multisite module
+// (uncomment //return to disable plugin on Multisite)
+require_once dirname(FILE).'/admin-notices-ms.php';
+if (false !== \LittleBizzy\HeaderCleanup\Admin_Notices_MS::instance(FILE)) {
+	//return;
+}
 
 // Loader
 require_once dirname(FILE).'/helpers/loader.php';
