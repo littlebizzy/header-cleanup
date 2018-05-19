@@ -41,12 +41,12 @@ final class Admin_Notices {
 			'desc' => 'Disables both external and internal embedding functions to avoid slow page render, instability and SEO issues, and to improve overall loading speed.',
 			'filename' => 'disable-embeds.php',
 		),
-    'disable-emojis-littlebizzy' => array(
+    		'disable-emojis-littlebizzy' => array(
 			'name' => 'Disable Emojis',
 			'desc' => 'Completely disables both the old and new versions of WordPress emojis, removes the corresponding javascript calls, and improves page loading times.',
 			'filename' => 'disable-emojis.php',
 		),
-    'disable-xml-rpc-littlebizzy' => array(
+    		'disable-xml-rpc-littlebizzy' => array(
 			'name' => 'Disable XML-RPC',
 			'desc' => 'Completely disables all XML-RPC related functions in WordPress including pingbacks and trackbacks, and helps prevent attacks on the xmlrpc.php file.',
 			'filename' => 'disable-xml-rpc.php',
