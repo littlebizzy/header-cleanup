@@ -18,12 +18,17 @@ Cleans up most of the unnecessary junk meta included by default in the WordPress
 
 Cleans up most of the unnecessary junk meta included by default in the WordPress header including generator, RSD, shortlink, previous and next, etc.
 
-* [**Patreon (support our free projects with $1/month and receive VIP support in our private Facebook group)**](https://www.patreon.com/littlebizzy)
+* [**Join our FREE Facebook group for support!**](https://www.facebook.com/groups/littlebizzy/)
+* [**Worth a 5-star review? Thank you!**](https://wordpress.org/support/plugin/header-cleanup-littlebizzy/reviews/?rate=5#new-post)
 * [Plugin Homepage](https://www.littlebizzy.com/plugins/header-cleanup)
 * [Plugin GitHub](https://github.com/littlebizzy/header-cleanup)
-* [SlickStack](https://slickstack.io)
-* [Starter](https://starter.littlebizzy.com)
-* [wplite](https://wplite.org)
+
+*Our related OSS projects:*
+
+* [SlickStack (LEMP stack automation)](https://slickstack.io)
+* [WP Lite boilerplate](https://wplite.org)
+* [Starter Theme](https://starter.littlebizzy.com)
+
 
 #### The Long Version ####
 
@@ -194,6 +199,7 @@ Please avoid leaving negative reviews in order to get a feature implemented. Ins
 * added recommended plugins notice
 * added rating request notice
 * added warning for Multisite installations
+* optimized plugin code
 
 = 1.0.1 =
 * fix: `PHP Notice: Undefined index: woocommerce in ../header-cleanup-littlebizzy/core/cleaner.php`
