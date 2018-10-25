@@ -7,7 +7,7 @@ Requires at least: 4.4
 Tested up to: 4.9
 Requires PHP: 7.0
 Multisite support: No
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Prefix: HDRCLN
@@ -22,13 +22,7 @@ Cleans up most of the unnecessary junk meta included by default in the WordPress
 * [**Worth a 5-star review? Thank you!**](https://wordpress.org/support/plugin/header-cleanup-littlebizzy/reviews/?rate=5#new-post)
 * [Plugin Homepage](https://www.littlebizzy.com/plugins/header-cleanup)
 * [Plugin GitHub](https://github.com/littlebizzy/header-cleanup)
-
-*Our related OSS projects:*
-
 * [SlickStack (LEMP stack automation)](https://slickstack.io)
-* [WP Lite boilerplate](https://wplite.org)
-* [Starter Theme](https://starter.littlebizzy.com)
-
 
 #### The Long Version ####
 
@@ -94,82 +88,9 @@ Note: This defined constant will only affect the notices mentioned above, and wi
 * [Remove WP Version And Shortlink](https://wordpress.org/plugins/remove-wp-version-and-shortlink/)
 * [WS Header Cleaner](https://wordpress.org/plugins/ws-header-cleaner/)
 
-#### Free Plugins ####
-
-* [404 To Homepage](https://wordpress.org/plugins/404-to-homepage-littlebizzy/)
-* [Autoloader](https://github.com/littlebizzy/autoloader)
-* [CloudFlare](https://wordpress.org/plugins/cf-littlebizzy/)
-* [Delete Expired Transients](https://wordpress.org/plugins/delete-expired-transients-littlebizzy/)
-* [Disable Admin-AJAX](https://wordpress.org/plugins/disable-admin-ajax-littlebizzy/)
-* [Disable Author Pages](https://wordpress.org/plugins/disable-author-pages-littlebizzy/)
-* [Disable Cart Fragments](https://wordpress.org/plugins/disable-cart-fragments-littlebizzy/)
-* [Disable Embeds](https://wordpress.org/plugins/disable-embeds-littlebizzy/)
-* [Disable Emojis](https://wordpress.org/plugins/disable-emojis-littlebizzy/)
-* [Disable Empty Trash](https://wordpress.org/plugins/disable-empty-trash-littlebizzy/)
-* [Disable Image Compression](https://wordpress.org/plugins/disable-image-compression-littlebizzy/)
-* [Disable jQuery Migrate](https://wordpress.org/plugins/disable-jq-migrate-littlebizzy/)
-* [Disable Search](https://wordpress.org/plugins/disable-search-littlebizzy/)
-* [Disable WooCommerce Status](https://wordpress.org/plugins/disable-wc-status-littlebizzy/)
-* [Disable WooCommerce Styles](https://wordpress.org/plugins/disable-wc-styles-littlebizzy/)
-* [Disable XML-RPC](https://wordpress.org/plugins/disable-xml-rpc-littlebizzy/)
-* [Download Media](https://wordpress.org/plugins/download-media-littlebizzy/)
-* [Download Plugin](https://wordpress.org/plugins/download-plugin-littlebizzy/)
-* [Download Theme](https://wordpress.org/plugins/download-theme-littlebizzy/)
-* [Duplicate Post](https://wordpress.org/plugins/duplicate-post-littlebizzy/)
-* [Enable Subtitles](https://wordpress.org/plugins/enable-subtitles-littlebizzy/)
-* [Export Database](https://wordpress.org/plugins/export-database-littlebizzy/)
-* [Facebook Pixel](https://wordpress.org/plugins/fb-pixel-littlebizzy/)
-* [Force HTTPS](https://wordpress.org/plugins/force-https-littlebizzy/)
-* [Force Strong Hashing](https://wordpress.org/plugins/force-strong-hashing-littlebizzy/)
-* [Google Analytics](https://wordpress.org/plugins/ga-littlebizzy/)
-* [Header Cleanup](https://wordpress.org/plugins/header-cleanup-littlebizzy/)
-* [Index Autoload](https://wordpress.org/plugins/index-autoload-littlebizzy/)
-* [Maintenance Mode](https://wordpress.org/plugins/maintenance-mode-littlebizzy/)
-* [Profile Change Alerts](https://wordpress.org/plugins/profile-change-alerts-littlebizzy/)
-* [Remove Category Base](https://wordpress.org/plugins/remove-category-base-littlebizzy/)
-* [Remove Query Strings](https://wordpress.org/plugins/remove-query-strings-littlebizzy/)
-* [Server Status](https://wordpress.org/plugins/server-status-littlebizzy/)
-* [StatCounter](https://wordpress.org/plugins/sc-littlebizzy/)
-* [View Defined Constants](https://wordpress.org/plugins/view-defined-constants-littlebizzy/)
-* [Virtual Robots.txt](https://wordpress.org/plugins/virtual-robotstxt-littlebizzy/)
-
-#### Premium Plugins ####
-
-* [**Members Only**](https://www.littlebizzy.com/members)
-* [Dunning Master](https://www.littlebizzy.com/plugins/dunning-master)
-* [Genghis Khan](https://www.littlebizzy.com/plugins/genghis-khan)
-* [Great Migration](https://www.littlebizzy.com/plugins/great-migration)
-* [Security Guard](https://www.littlebizzy.com/plugins/security-guard)
-* [SEO Genius](https://www.littlebizzy.com/plugins/seo-genius)
-* [Speed Demon](https://www.littlebizzy.com/plugins/speed-demon)
-
 #### Special Thanks ####
 
-* [Alex Georgiou](https://www.alexgeorgiou.gr)
-* [Automattic](https://automattic.com)
-* [Brad Touesnard](https://bradt.ca)
-* [Daniel Auener](http://www.danielauener.com)
-* [Delicious Brains](https://deliciousbrains.com)
-* [Greg Rickaby](https://gregrickaby.com)
-* [Matt Mullenweg](https://ma.tt)
-* [Mika Epstein](https://halfelf.org)
-* [Mike Garrett](https://mikengarrett.com)
-* [Samuel Wood](http://ottopress.com)
-* [Scott Reilly](http://coffee2code.com)
-* [Jan Dembowski](https://profiles.wordpress.org/jdembowski)
-* [Jeff Starr](https://perishablepress.com)
-* [Jeff Chandler](https://jeffc.me)
-* [Jeff Matson](https://jeffmatson.net)
-* [Jeremy Wagner](https://jeremywagner.me)
-* [John James Jacoby](https://jjj.blog)
-* [Leland Fiegel](https://leland.me)
-* [Paul Irish](https://www.paulirish.com)
-* [Rahul Bansal](https://profiles.wordpress.org/rahul286)
-* [Roots](https://roots.io)
-* [rtCamp](https://rtcamp.com)
-* [Ryan Hellyer](https://geek.hellyer.kiwi)
-* [WP Chat](https://wpchat.com)
-* [WP Tavern](https://wptavern.com)
+[Alex Georgiou](https://www.alexgeorgiou.gr), [Automattic](https://automattic.com), [Brad Touesnard](https://bradt.ca), [Daniel Auener](http://www.danielauener.com), [Delicious Brains](https://deliciousbrains.com), [Greg Rickaby](https://gregrickaby.com), [Matt Mullenweg](https://ma.tt), [Mika Epstein](https://halfelf.org), [Mike Garrett](https://mikengarrett.com), [Samuel Wood](http://ottopress.com), [Scott Reilly](http://coffee2code.com), [Jan Dembowski](https://profiles.wordpress.org/jdembowski), [Jeff Starr](https://perishablepress.com), [Jeff Chandler](https://jeffc.me), [Jeff Matson](https://jeffmatson.net), [Jeremy Wagner](https://jeremywagner.me), [John James Jacoby](https://jjj.blog), [Leland Fiegel](https://leland.me), [Luke Cavanagh](https://github.com/lukecav), [Paul Irish](https://www.paulirish.com), [Rahul Bansal](https://profiles.wordpress.org/rahul286), [Roots](https://roots.io), [rtCamp](https://rtcamp.com), [Ryan Hellyer](https://geek.hellyer.kiwi), [WP Chat](https://wpchat.com), [WP Tavern](https://wptavern.com)
 
 #### Disclaimer ####
 
@@ -193,12 +114,15 @@ Please avoid leaving negative reviews in order to get a feature implemented. Ins
 
 == Changelog ==
 
+= 1.1.2 =
+* updated recommended plugins
+
 = 1.1.1 =
 * updated plugin meta
 
 = 1.1.0 =
 * versioning correction (major changes in 1.0.2)
-* (no code changes)
+* no code changes
 
 = 1.0.2 =
 * disables `rest_output_link_wp_head`
@@ -209,13 +133,14 @@ Please avoid leaving negative reviews in order to get a feature implemented. Ins
 * optimized plugin code
 
 = 1.0.1 =
-* fix: `PHP Notice: Undefined index: woocommerce in ../header-cleanup-littlebizzy/core/cleaner.php`
-* (better support for non-WooCommerce and older WooCommerce versions)
+* fixed: `PHP Notice: Undefined index: woocommerce in ../header-cleanup-littlebizzy/core/cleaner.php`
+* (better support for non-WooCommerce sites and older WooCommerce versions)
 
 = 1.0.0 =
 * initial release
+* tested with PHP 7.0
 * plugin uses PHP namespaces
-* object oriented code
+* object-oriented codebase
 * disables `rsd_link`
 * disables `wp_generator` 
 * disables `wc_generator_tag`
