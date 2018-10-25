@@ -28,7 +28,7 @@ final class Admin_Notices {
 	private $rate_us_url2 = 'https://www.facebook.com/groups/littlebizzy/';
 	private $rate_us_url3 = 'https://www.littlebizzy.com/services/speed-boost?utm_source=wpnotice';
 	private $rate_us_url4 = 'https://codex.wordpress.org/Plugin_API/Action_Reference/admin_notices#Disable_Nag_Notices';
-	private $rate_us_message = 'Howdy, friend :)<br><br>Thanks for using <strong>%plugin%</strong>. Please support our free work by rating this plugin with 5 stars on <a href="%url%" target="_blank">WordPress.org</a>.<br><br>You may also join our free <a href="%url2%" target="_blank">Facebook group</a> to post any questions or comments!<br><br>Cheers, Jesse<br><br>P.S. Use coupon code <code>SPEED20</code> to get $20 off our popular <a href="%url3%" target="_blank">Speed Boost</a> service at LittleBizzy.com.<br><br><small><em><a href="%url4%" target="_blank">Hide these notices</a></em></small>';
+	private $rate_us_message = 'Thanks for using <strong>%plugin%</strong>. Please support our free work by rating this plugin with 5 stars on <a href="%url%" target="_blank">WordPress.org</a>.<br><br>You may also join our free <a href="%url2%" target="_blank">Facebook group</a> to post any questions or comments!<br><br>Cheers, Jesse<br><br>P.S. Use coupon code <code>SPEED20</code> to get $20 off our popular <a href="%url3%" target="_blank">Speed Boost</a> service at LittleBizzy.com.<br><br><small><em><a href="%url4%" target="_blank">Hide these notices</a></em></small>';
 
 
 
@@ -38,6 +38,11 @@ final class Admin_Notices {
 	private $days_dismissing_suggestions = 180; // 6 months reappear
 	private $suggestions_message = '%plugin% recommends the following free plugins:';
 	private $suggestions = array(
+		'minify-html-littlebizzy' => array(
+			'name' => 'Minify HTML',
+			'desc' => 'Tactfully minifies HTML output and markup to remove line breaks, whitespace, comments, and other code bloat to cleanup source code and improve speed.',
+			'filename' => 'minify-html.php',
+		),
 		'disable-embeds-littlebizzy' => array(
 			'name' => 'Disable Embeds',
 			'desc' => 'Disables both external and internal embedding functions to avoid slow page render, instability and SEO issues, and to improve overall loading speed.',
@@ -57,11 +62,6 @@ final class Admin_Notices {
 			'name' => 'Disable jQuery Migrate',
 			'desc' => 'Easily prevent the jQuery migrate script that is included with WordPress Core from being loaded to slim down source code (for advanced users only).',
 			'filename' => 'disable-jquery-migrate.php',
-		),
-		'enable-subtitles-littlebizzy' => array(
-			'name' => 'Enable Subtitles',
-			'desc' => 'Creates a the_subtitle function for use in WordPress posts and pages, such as for H2 subtitles, that can be called in template files or shortcodes.',
-			'filename' => 'enable-subtitles.php',
 		),
 	);
 
