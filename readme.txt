@@ -4,10 +4,10 @@ Contributors: littlebizzy
 Donate link: https://www.patreon.com/littlebizzy
 Tags: header, cleanup, remove, meta, junk
 Requires at least: 4.4
-Tested up to: 4.9
+Tested up to: 5.0
 Requires PHP: 7.0
 Multisite support: No
-Stable tag: 1.1.2
+Stable tag: 1.2.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Prefix: HDRCLN
@@ -18,65 +18,35 @@ Cleans up most of the unnecessary junk meta included by default in the WordPress
 
 Cleans up most of the unnecessary junk meta included by default in the WordPress header including generator, RSD, shortlink, previous and next, etc.
 
-* [**Join our FREE Facebook group for support!**](https://www.facebook.com/groups/littlebizzy/)
+* [**Join our FREE Facebook group for support**](https://www.facebook.com/groups/littlebizzy/)
 * [**Worth a 5-star review? Thank you!**](https://wordpress.org/support/plugin/header-cleanup-littlebizzy/reviews/?rate=5#new-post)
 * [Plugin Homepage](https://www.littlebizzy.com/plugins/header-cleanup)
 * [Plugin GitHub](https://github.com/littlebizzy/header-cleanup)
-* [SlickStack (LEMP stack automation)](https://slickstack.io)
 
-#### The Long Version ####
+#### Current Features ####
 
 WordPress Core includes several meta items in the header that many sites don't require. For cleaner and simpler code, this plugin is recommended to help simplify your header for SEO and general code cleanliness.
 
-The problem with many "cleanup" plugins with WordPress is that they don't focus on one purpose, but rather mix and match various goals in a confusing manner; for example they might remove some "junk code" from the header, but also totally disable the functionality of a built-in Core function too such as the REST API or RSS feeds. Since our goal is to be hyper organized and clear about each of our plugin's goals, keep in mind that this plugin's sole purpose is to cleanup source code in the header and is not meant to actually disable any functionality. Instead, if you wish to disable certain functions, you can install this plugin alonside our other plugins such as Disable Emojis, Disable XML-RPC, Disable Embeds, Disable REST API, Disable Feeds, etc.
+The problem with many "cleanup" plugins with WordPress is that they don't focus on one purpose, but rather mix and match various goals in a confusing manner; for example they might remove some "junk code" from the header, but also totally disable the functionality of a built-in Core function too such as the REST API or RSS feeds. Since our goal is to be hyper organized and clear about each of our plugin's goals, keep in mind that this plugin's sole purpose is to cleanup source code in the header and is not meant to actually disable any functionality. Instead, if you wish to disable certain functions, you can install this plugin alonside our other plugins such as Disable Emojis, Disable XML-RPC, Disable Embeds, Disable REST API, Disable Feeds, etc. (some of these functions' header data is not removed by this plugin to prevent breaking their functionality).
 
-All of the following are completely removed:
+Removes all of the following code:
 
-* `rsd_link`
-* `wp_generator` 
-* `wc_generator_tag`
-* `wlwmanifest_link`
-* `wp_shortlink_wp_head`
-* `start_post_rel_link`
-* `parent_post_rel_link`
-* `index_rel_link`
-* `adjacent_posts_rel_link`
-* `adjacent_posts_rel_link_wp_head`
-* `feed_links`
-* `feed_links_extra`
-* `rest_output_link_wp_head`
-* `wp_resource_hints`
+* Removes `rsd_link`
+* Removes `wp_generator` 
+* Removes `wc_generator_tag`
+* Removes `wlwmanifest_link`
+* Removes `wp_shortlink_wp_head`
+* Removes `start_post_rel_link`
+* Removes `parent_post_rel_link`
+* Removes `index_rel_link`
+* Removes `adjacent_posts_rel_link`
+* Removes `adjacent_posts_rel_link_wp_head`
+* Removes `feed_links`
+* Removes `feed_links_extra`
+* Removes `rest_output_link_wp_head`
+* Removes `wp_resource_hints`
 
-#### Compatibility ####
-
-This plugin has been designed for use on LEMP (Nginx) web servers with PHP 7.0 and MySQL 5.7 to achieve best performance. All of our plugins are meant for single site WordPress installations only; for both performance and security reasons, we highly recommend against using WordPress Multisite for the vast majority of projects.
-
-#### Plugin Features ####
-
-* Settings Page: No
-* Premium Version Available: Yes ([SEO Genius](https://www.littlebizzy.com/plugins/seo-genius))
-* Includes Media (Images, Icons, Etc): No
-* Includes CSS: No
-* Database Storage: Yes
-  * Transients: No
-  * Options: Yes
-  * Creates New Tables: No
-* Database Queries: Backend (Options API)
-* Must-Use Support: Yes (Use With [Autoloader](https://github.com/littlebizzy/autoloader))
-* Multisite Support: No
-* Uninstalls Data: Yes
-
-#### Nag Notices ####
-
-This plugin generates multiple [Admin Notices](https://codex.wordpress.org/Plugin_API/Action_Reference/admin_notices) in the WP Admin dashboard. The first is a notice that fires during plugin activation which recommends several related free plugins that we believe will enhance this plugin's features; this notice will re-appear approximately once every 6 months as our code and recommendations evolve. The second is a notice that fires a few days after plugin activation which asks for a 5-star rating of this plugin on its WordPress.org profile page. This notice will re-appear approximately once every 9 months. These notices can be dismissed by clicking the **(x)** symbol in the upper right of the notice box. These notices may annoy or confuse certain users, but are appreciated by the majority of our userbase, who understand that these notices support our free contributions to the WordPress community while providing valuable (free) recommendations for optimizing their website.
-
-If you feel that these notices are too annoying, than we encourage you to consider one or more of our upcoming premium plugins that combine several free plugin features into a single control panel, or even consider developing your own plugins for WordPress, if supporting free plugin authors is too frustrating for you. A final alternative would be to place the defined constant mentioned below inside of your `wp-config.php` file to manually hide this plugin's nag notices:
-
-    define('DISABLE_NAG_NOTICES', true);
-
-Note: This defined constant will only affect the notices mentioned above, and will not affect any other notices generated by this plugin or other plugins, such as one-time notices that communicate with admin-level users.
-
-#### Inspiration ####
+Partially inspired by: 
 
 * [WP Head Cleanup](https://wordpress.org/plugins/wp-head-cleanup/)
 * [Clean Up WP Head](https://wordpress.org/plugins/clean-up-wp-head/)
@@ -88,13 +58,41 @@ Note: This defined constant will only affect the notices mentioned above, and wi
 * [Remove WP Version And Shortlink](https://wordpress.org/plugins/remove-wp-version-and-shortlink/)
 * [WS Header Cleaner](https://wordpress.org/plugins/ws-header-cleaner/)
 
-#### Special Thanks ####
+#### Compatibility ####
 
-[Alex Georgiou](https://www.alexgeorgiou.gr), [Automattic](https://automattic.com), [Brad Touesnard](https://bradt.ca), [Daniel Auener](http://www.danielauener.com), [Delicious Brains](https://deliciousbrains.com), [Greg Rickaby](https://gregrickaby.com), [Matt Mullenweg](https://ma.tt), [Mika Epstein](https://halfelf.org), [Mike Garrett](https://mikengarrett.com), [Samuel Wood](http://ottopress.com), [Scott Reilly](http://coffee2code.com), [Jan Dembowski](https://profiles.wordpress.org/jdembowski), [Jeff Starr](https://perishablepress.com), [Jeff Chandler](https://jeffc.me), [Jeff Matson](https://jeffmatson.net), [Jeremy Wagner](https://jeremywagner.me), [John James Jacoby](https://jjj.blog), [Leland Fiegel](https://leland.me), [Luke Cavanagh](https://github.com/lukecav), [Paul Irish](https://www.paulirish.com), [Rahul Bansal](https://profiles.wordpress.org/rahul286), [Roots](https://roots.io), [rtCamp](https://rtcamp.com), [Ryan Hellyer](https://geek.hellyer.kiwi), [WP Chat](https://wpchat.com), [WP Tavern](https://wptavern.com)
+This plugin has been designed for use on [SlickStack](https://slickstack.io) web servers with PHP 7.2 and MySQL 5.7 to achieve best performance. All of our plugins are meant for single site WordPress installations only; for both performance and usability reasons, we highly recommend avoiding WordPress Multisite for the vast majority of projects.
+
+Any of our WordPress plugins may also be loaded as "Must-Use" plugins by using our free [Autoloader](https://github.com/littlebizzy/autoloader) script in the `mu-plugins` directory.
+
+#### Defined Constants ####
+
+    /* Plugin Meta */
+    define('DISABLE_NAG_NOTICES', true);
+
+#### Technical Details ####
+
+* Prefix: HDRCLN
+* Parent Plugin: [**Speed Demon**](https://wordpress.org/plugins/speed-demon-littlebizzy/)
+* Disable Nag Notices: [Yes](https://codex.wordpress.org/Plugin_API/Action_Reference/admin_notices#Disable_Nag_Notices)
+* Settings Page: No
+* PHP Namespaces: Yes
+* Object-Oriented Code: Yes
+* Includes Media (images, icons, etc): No
+* Includes CSS: No
+* Database Storage: Yes
+  * Transients: No
+  * WP Options Table: Yes
+  * Other Tables: No
+  * Creates New Tables: No
+  * Creates New WP Cron Jobs: No
+* Database Queries: Backend Only (Options API)
+* Must-Use Support: [Yes](https://github.com/littlebizzy/autoloader)
+* Multisite Support: No
+* Uninstalls Data: Yes
 
 #### Disclaimer ####
 
-We released this plugin in response to our managed hosting clients asking for better access to their server, and our primary goal will remain supporting that purpose. Although we are 100% open to fielding requests from the WordPress community, we kindly ask that you keep the above mentioned goals in mind, thanks!
+We released this plugin in response to our managed hosting clients asking for better access to their server, and our primary goal will remain supporting that purpose. Although we are 100% open to fielding requests from the WordPress community, we kindly ask that you keep these conditions in mind, and refrain from slandering, threatening, or harassing our team members in order to get a feature added, or to otherwise get "free" support. The only place you should be contacting us is in our free [**Facebook group**](https://www.facebook.com/groups/littlebizzy/) which has been setup for this purpose, or via GitHub if you are an experienced developer. Thank you!
 
 == Installation ==
 
@@ -113,6 +111,10 @@ There is no settings page for top speed and simplicity.
 Please avoid leaving negative reviews in order to get a feature implemented. Instead, we kindly ask that you post your feedback on the wordpress.org support forums by tagging this plugin in your post. If needed, you may also contact our homepage.
 
 == Changelog ==
+
+= 1.2.0 =
+* tested with WP 5.0
+* updated plugin meta
 
 = 1.1.2 =
 * updated recommended plugins
