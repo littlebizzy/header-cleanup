@@ -1,0 +1,16 @@
+{
+    "name": "littlebizzy/header-cleanup",
+    "type": "wordpress-plugin",
+    "license": "GPLv3",
+    "homepage": "https://www.littlebizzy.com/plugins/header-cleanup",
+    "description": "Cleans up most of the unnecessary junk meta included by default in the WordPress header including generator, RSD, shortlink, previous and next, etc.",
+    "keywords": ["wordpress","plugin","header","head","cleanup","optimize","meta","junk","bloat"],
+    "support": {
+        "issues": "https://github.com/littlebizzy/header-cleanup/issues",
+        "forum": "https://www.littlebizzy.com/members"
+    }
+    "require": {
+        "php": "^7.2",
+        "composer/installers": "~1.0"
+    }
+}
